@@ -3,9 +3,9 @@ const DATA = {
     name: "Fadel Muhammad",
     avatar: "img/me.webp",
     status: "Ayo Berkolaborasi",
-    email: "fadelmuh185@email.com",
-    github: "https://github.com/fm5355138-pixel",
-    instagram: "https://www.instagram.com/fdelmhmmdd_/",
+    email: "fm1181546@email.com",
+    github: "https://github.com/fm1181546-html",
+    instagram: "https://www.instagram.com/_justtfdl/",
     linkedin: "#",
     whatsapp: "https://wa.me/6289509394128"
   },
@@ -297,7 +297,7 @@ const DATA = {
       button: { id: "Pergi ke Instagram", en: "Open Instagram" },
       icon: "instagram",
       theme: "theme-pink",
-      url: "https://www.instagram.com/fdelmhmmdd_/"
+      url: "https://www.instagram.com/_justtfdl/"
     },
     {
       title: { id: "Mari Terhubung", en: "Let's Connect" },
