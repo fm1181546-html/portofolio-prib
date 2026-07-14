@@ -160,7 +160,7 @@ Punya pertanyaan, feedback, atau mau kolaborasi?
 
 [![Email](https://img.shields.io/badge/Email-fm1181546@email.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fm1181546@email.com)
 [![Instagram](https://img.shields.io/badge/Instagram-@_justtfdl-E1306C?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/_justtfdl/)
-[![GitHub](https://img.shields.io/badge/GitHub-fm1181546-html-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/fm1181546-html)
+[![GitHub](https://img.shields.io/badge/GitHub-fm1181546--html-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/fm1181546-html)
 
 </div>
 
