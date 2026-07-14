@@ -5,8 +5,8 @@
 **Website portfolio & personal Fadel Muhammad**
 
 [![Live](https://img.shields.io/badge/🌐_Live_Website-fadel.my.id-fbbf24?style=for-the-badge&labelColor=0d1117)](https://fadel.my.id)
-[![GitHub](https://img.shields.io/badge/GitHub-fm5355138--pixel-30363d?style=for-the-badge&logo=github&logoColor=white)](https://github.com/fm5355138-pixel)
-[![Instagram](https://img.shields.io/badge/Instagram-fdelmhmmdd__-e1306c?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/fdelmhmmdd_/)
+[![GitHub](https://img.shields.io/badge/GitHub-fm1181546--pixel-30363d?style=for-the-badge&logo=github&logoColor=white)](https://github.com/fm1181546-html)
+[![Instagram](https://img.shields.io/badge/Instagram-_justtfdl-e1306c?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/_justtfdl/)
 
 <br/>
 
