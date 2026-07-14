@@ -10,7 +10,6 @@
 
 <br/>
 
-![Preview](https://fadel.my.id/img/proyek/website-pribadi.webp)
 
 <br/>
 
