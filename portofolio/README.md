@@ -99,7 +99,7 @@ Tidak perlu build step apapun. Cukup:
 
 ```bash
 # Clone repo
-git clone [https://github.com/fm1181546-html/](https://github.com/fm5355138-pixel/fadel.my.id.git)
+git clone [https://github.com/fm1181546-html/portofolio-prib.git](https://github.com/fm1181546-html/portofolio-prib.git)
 
 # Buka langsung di browser
 open index.html
