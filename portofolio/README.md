@@ -1,6 +1,6 @@
 <div align="center">
 
-# ✦ fadel.my.id
+# ✦ fadeldev.vercel.app
 
 **Website portfolio & personal Fadel Muhammad**
 
