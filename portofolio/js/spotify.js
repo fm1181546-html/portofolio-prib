@@ -1,4 +1,3 @@
-/* Helper SVG  */
 function musicSVG() {
   return `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`;
 }
@@ -11,7 +10,6 @@ function heartSVG() {
   return `<svg width="13" height="13" viewBox="0 0 24 24" fill="#1DB954" stroke="#1DB954" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>`;
 }
 
-/* Render: Profil  */
 function renderProfile(profile, stats) {
   const el = document.getElementById("sp-profile");
   if (!el) return;
@@ -43,7 +41,6 @@ function renderProfile(profile, stats) {
   `;
 }
 
-/* Render: Playlist */
 function renderPlaylists(playlists) {
   const el      = document.getElementById("sp-playlists");
   const countEl = document.getElementById("sp-playlists-count");
@@ -71,7 +68,6 @@ function renderPlaylists(playlists) {
   </div>`;
 }
 
-/* Placeholder gradient untuk cover playlist yang belum ada fotonya */
 function playlistPlaceholder(name) {
   const palettes = [
     ["#1DB954", "#157a3a"],
@@ -95,7 +91,6 @@ function playlistPlaceholder(name) {
     </svg>`;
 }
 
-/* Render: Lagu Disukai */
 function renderLikedSongs(songs) {
   const el      = document.getElementById("sp-liked-songs");
   const countEl = document.getElementById("sp-liked-count");
@@ -128,7 +123,6 @@ function renderLikedSongs(songs) {
   </div>`;
 }
 
-/* Render: Artis Favorit */
 function renderTopArtists(artists) {
   const el      = document.getElementById("sp-top-artists");
   const countEl = document.getElementById("sp-artists-count");
@@ -156,7 +150,6 @@ function renderTopArtists(artists) {
   </div>`;
 }
 
-/* Inisialisasi */
 function loadSpotifyData() {
   if (typeof SPOTIFY_DATA === "undefined") {
     console.error("[Spotify] SPOTIFY_DATA tidak ditemukan. Pastikan spotify-data.js sudah di-load.");
