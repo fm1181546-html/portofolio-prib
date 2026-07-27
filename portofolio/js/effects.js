@@ -1,4 +1,3 @@
-// Spotlight Effect
 class SpotlightEffect {
   constructor(element, options = {}) {
     this.element = element;
@@ -11,7 +10,6 @@ class SpotlightEffect {
     element.style.position = 'relative';
     element.style.overflow = 'hidden';
     
-    // Create spotlight div
     this.spotlight = document.createElement('div');
     this.spotlight.className = 'spotlight-effect';
     this.spotlight.style.cssText = `
@@ -54,7 +52,6 @@ class SpotlightEffect {
   }
 }
 
-// Particle Burst Effect
 class ParticleBurst {
   constructor(element, options = {}) {
     this.element = element;
@@ -130,7 +127,6 @@ class ParticleBurst {
   }
 }
 
-// 3D Tilt Effect
 class TiltEffect {
   constructor(element, options = {}) {
     this.element = element;
@@ -171,7 +167,6 @@ class TiltEffect {
   }
 }
 
-// Stagger Animation
 const staggerAnimation = (elements, options = {}) => {
   const delay = options.delay || 50;
   const duration = options.duration || 600;
@@ -185,7 +180,6 @@ const staggerAnimation = (elements, options = {}) => {
   });
 };
 
-// Add stagger keyframes to page
 const addStaggerKeyframes = () => {
   if (document.getElementById('stagger-keyframes')) return;
   
@@ -235,7 +229,6 @@ const addStaggerKeyframes = () => {
 
 addStaggerKeyframes();
 
-// Smooth Scroll Animation
 const smoothScroll = (target, duration = 1000) => {
   const start = window.scrollY;
   const end = target.offsetTop;
@@ -265,7 +258,6 @@ const smoothScroll = (target, duration = 1000) => {
   requestAnimationFrame(scroll);
 };
 
-// Intersection Observer For Scroll Animations
 const observeElements = (selector, callback, options = {}) => {
   const observerOptions = {
     threshold: options.threshold || 0.1,
@@ -285,7 +277,6 @@ const observeElements = (selector, callback, options = {}) => {
   document.querySelectorAll(selector).forEach(el => observer.observe(el));
 };
 
-// Bounce Animation
 const bounceElement = (element, distance = 10, duration = 600) => {
   const startTime = Date.now();
   const initialPosition = element.getBoundingClientRect().top;
@@ -294,7 +285,6 @@ const bounceElement = (element, distance = 10, duration = 600) => {
     const elapsed = Date.now() - startTime;
     const progress = Math.min(elapsed / duration, 1);
     
-    // Ease-out bounce
     const bounce = -Math.abs(Math.sin(progress * Math.PI * 3)) * (1 - progress);
     const offset = bounce * distance;
     
@@ -307,5 +297,3 @@ const bounceElement = (element, distance = 10, duration = 600) => {
   
   animate();
 };
-
-// Effects library loaded
