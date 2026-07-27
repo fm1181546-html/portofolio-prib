@@ -28,9 +28,7 @@ const state = {
   lang: localStorage.getItem("portfolio-lang") || "id"
 };
 
-// Alias URL: pageId (DATA.nav) -> hash yang tampil di browser
 const HASH_DISPLAY = { links: "spotify" };
-// Kebalikan: hash URL -> pageId internal
 const HASH_RESOLVE = { spotify: "links" };
 
 const I18N = {
@@ -433,7 +431,6 @@ async function openProjectDetail(slug) {
     return `<a class="proj-detail-link ${isGithub?"proj-link-github":"proj-link-live"}" href="${l.url}" target="_blank" rel="noreferrer">${isGithub?ICON_GITHUB:ICON_LIVE}${escapeHtml(l.label)}</a>`;
   }).join("");
 
-  // README area — skeleton menggantikan spinner
   const skeleton = byId("proj-readme-skeleton");
   const content  = byId("proj-readme-content");
   const fallback = byId("proj-readme-fallback");
@@ -442,7 +439,6 @@ async function openProjectDetail(slug) {
   fallback.classList.add("hidden");
 
   if (project.github_raw) {
-    // Tampilkan skeleton saat fetch README dari GitHub
     skeleton.classList.remove("hidden");
     const readme = await fetchReadme(project.github_raw);
     skeleton.classList.add("hidden");
@@ -451,7 +447,6 @@ async function openProjectDetail(slug) {
       highlightCodeBlocks(content);
       content.classList.remove("hidden");
     } else if (project.detail) {
-      // Fetch gagal → fallback konten lokal dengan skeleton singkat
       skeleton.classList.remove("hidden");
       await new Promise(r => setTimeout(r, 280));
       skeleton.classList.add("hidden");
@@ -460,7 +455,6 @@ async function openProjectDetail(slug) {
       fallback.classList.remove("hidden");
     }
   } else if (project.detail) {
-    // Konten lokal: skeleton 280ms agar transisi terasa halus
     skeleton.classList.remove("hidden");
     await new Promise(r => setTimeout(r, 280));
     skeleton.classList.add("hidden");
@@ -700,7 +694,6 @@ function initLangButtons() {
 function hidePageLoader() {
   const loader = byId("page-loader");
   if (!loader) return;
-  // Dua rAF: pastikan browser selesai paint konten sebelum fade-out dimulai
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
       loader.classList.add("hide");
@@ -736,13 +729,11 @@ function init() {
     navigate("proyek", false);
     openProjectDetail(slug);
   } else {
-    // Resolve alias hash -> pageId internal
     const resolvedHash = HASH_RESOLVE[rawHash] || rawHash;
     const validRoute = DATA.nav.some(item => item.id === resolvedHash);
     navigate(validRoute ? resolvedHash : "beranda", false);
   }
-
-  // Sembunyikan page loader setelah semua konten selesai dirender
+  
   hidePageLoader();
 }
 
